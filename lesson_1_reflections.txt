@@ -25,5 +25,8 @@ git init					   # create a new repository on my current folder
 git status					   # which files have changed since the last commit?
 git add (filename)			   # add files to git staging area
 								 when one is ready to commit the changes, they go from staging area to Repository
+git commit -m "Commit message here"    # Commit code including a message.
+git commit 					   # opens sublime to enter commit comments, just do a control +S to save the file and it will be posted to the right directory
+							 
 								 
 		
