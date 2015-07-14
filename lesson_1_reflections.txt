@@ -1,0 +1,29 @@
+cd ~                          # change directories to your home directory
+mkdir version-control         # make version-control directory
+cd version-control            # go to version-control directory
+mkdir reflections             # create reflections directory
+cd reflections                # go to reflections directory
+subl lesson_1_reflections.txt # launch sublime with file called lesson_1_reflections.txt (you can replace subl with another editor here if you prefer a different one)
+pwd # print working directory - shows what directory you are in
+ls  # list the files in this directory
+diff -u new_file old_file     #shows a pretty version of the differences between 2 files
+mv  path/file1  new_path/file1 # Move a file from one location to a new one
+subl .bash_profile             # Open .bash_profile with sublime
+
+
+--------------------- GIT COMMANDS ------------------------------------------------------------------
+git log                        # The whole history of changes to the , latest commit at the top
+git diff  old_file  new_file          # differences between 2 file IDs.  older file goes first. Diff takes 2 committs and compares them. Latest commit is shown first
+git diff old_ID new_ID				  # differences between 2 commits, older one first
+git diff -u old_file new_file		  # differences between 2 file IDs but prettyfied, add the older file first
+git log --stat				   # gives statistics of which files have changed since the last commit
+git clone  url				   # copy a whole repository from one computer to another one (repository must have name that ends in .git)
+head  						   # commit you are currently on
+git checkout commitID		   # restoring all of the files to where they were at the time the commit was made
+git checkout -b new_branch_name       # Create a new branch and retain the commits you create
+git init					   # create a new repository on my current folder
+git status					   # which files have changed since the last commit?
+git add (filename)			   # add files to git staging area
+								 when one is ready to commit the changes, they go from staging area to Repository
+								 
+		
